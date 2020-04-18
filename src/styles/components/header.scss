@@ -1,5 +1,4 @@
 .header {
-  padding: 0 297px;
   height: 550px;
   width: 100%;
   background-image: url('https://via.placeholder.com/1920x550');
@@ -20,11 +19,5 @@
 
   .icon {
     flex: 5%;
-  }
-}
-
-@media (max-width: 1500px) {
-  .header {
-    padding: 0 100px;
   }
 }

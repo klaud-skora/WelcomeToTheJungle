@@ -1,0 +1,29 @@
+.recommended {
+  height: 438px;
+  background-color: $main-color;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  .carousel-control-prev, .carousel-control-next {
+    width: 10%;
+  }
+
+  .card {
+    position: relative;
+
+    .card-body {
+      color: #ffffff;
+      position: absolute;
+      bottom: 0;
+    }
+    .card-text {
+      font-size: 12px;
+    }
+
+    .card-price {
+      font-size: 13px;
+      font-weight: 500;
+    }
+  }
+}
