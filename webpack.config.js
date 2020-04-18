@@ -1,6 +1,8 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const merge = require('webpack-merge');
+const webpack = require('webpack');
 
 const baseConfig = () => ({
   entry: './src/index.js',
@@ -23,6 +25,12 @@ const baseConfig = () => ({
     new HtmlWebpackPlugin({
       template: './src/index.html',
     }),
+    new webpack.ProvidePlugin({ // inject ES5 modules as global vars
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery',
+      Popper: ['popper.js', 'default']
+  }),
   ],
 });
 
@@ -42,7 +50,11 @@ const devConfig = () => ({
         ],
       },
       {
-        test: /\.(jpe?g|png|svg)$/,
+        test: /\.svg$/,
+        loader: 'svg-inline-loader'
+      },
+      {
+        test: /\.(jpe?g|png)$/,
         use: [
           {
             loader: 'file-loader',
@@ -68,7 +80,6 @@ const prodConfig = () => ({
             loader: 'css-loader',
             query: {
               modules: true, 
-              localIdentName: '[name]_[local]_[hash:base64:5]',
             },
           }, 
           'sass-loader',

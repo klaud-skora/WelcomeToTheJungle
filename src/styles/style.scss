@@ -1,12 +1,20 @@
-body {
-  padding: 300px 0;
-  background: #303030;
-}
+@import "~bootstrap/scss/bootstrap";
 
-section {
-  padding: 20px;
-  background: #0ad560;
-  color: #f2f2f2;
-  text-align: center;
-  margin-bottom: 20px;
-}
+@import 'variables';
+@import 'global';
+
+@import 'components/nav.scss';
+@import 'components/header.scss';
+
+// body {
+//   padding: 300px 0;
+//   background: #303030;
+// }
+
+// section {
+//   padding: 20px;
+//   background: #0ad560;
+//   color: #f2f2f2;
+//   text-align: center;
+//   margin-bottom: 20px;
+// }

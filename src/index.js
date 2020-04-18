@@ -1,4 +1,6 @@
 import './styles/style.scss';
-import script from './script';
+import 'bootstrap';
 
-script();
+// import script from './script';
+
+// script();

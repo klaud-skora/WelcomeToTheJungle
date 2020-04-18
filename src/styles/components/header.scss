@@ -1,0 +1,30 @@
+.header {
+  padding: 0 297px;
+  height: 550px;
+  width: 100%;
+  background-image: url('https://via.placeholder.com/1920x550');
+  display: flex;
+  align-items: flex-start;
+
+  .header__container {
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    flex: 50%;
+  }
+
+  .icon {
+    flex: 5%;
+  }
+}
+
+@media (max-width: 1500px) {
+  .header {
+    padding: 0 100px;
+  }
+}
