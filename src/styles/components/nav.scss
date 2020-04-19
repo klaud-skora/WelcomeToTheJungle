@@ -1,5 +1,9 @@
 .navbar {
 
+  .nav-hamburger {
+    display: none;
+  }
+
   .navbar-nav {
     flex-direction: row;
   }
@@ -23,5 +27,15 @@
 
   .nav-link {
     color: $font-main;
+  }
+
+  @media (max-width: 770px) {
+    .navbar-nav {
+      display: none;
+    }
+
+    .nav-hamburger {
+      display: inline-block;
+    }
   }
 }

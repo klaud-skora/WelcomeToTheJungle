@@ -11,6 +11,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
   }
 
   .logo {
@@ -19,5 +20,12 @@
 
   .icon {
     flex: 14%;
+  }
+
+  @media (max-width: 770px) {
+    .icon {
+      flex: 5%;
+    }
+
   }
 }

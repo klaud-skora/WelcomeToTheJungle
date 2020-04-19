@@ -23,6 +23,9 @@
     margin-right: 20px;
   }
 
+  .preferences {
+    flex-wrap: wrap;
+  }
   .space-wrapper {
     font-size: .8rem;
     display: flex;
@@ -43,6 +46,12 @@
   }
 
   .row {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 850px) {
+  .social, .policies, .preference {
     margin-bottom: 20px;
   }
 }

@@ -1,5 +1,5 @@
 .recommended {
-  height: 438px;
+  min-height: 438px;
   background-color: $main-color;
   display: flex;
   align-items: center;
@@ -25,5 +25,10 @@
       font-size: 13px;
       font-weight: 500;
     }
+  }
+
+
+  @media (max-width: 850px) {
+    padding: 100px;
   }
 }
