@@ -1,0 +1,48 @@
+.footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  height: 150px;
+  position: relative;
+
+  .footer__row {
+    align-items: center;
+  }
+
+  &::before {
+    content: '';
+    width: 80%;
+    height: 1px;
+    background-color: $font-holder;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .social .icon {
+    margin-right: 20px;
+  }
+
+  .space-wrapper {
+    font-size: .8rem;
+    display: flex;
+    justify-content: space-between;
+
+    .option { 
+      color: $font-holder;
+    }
+
+    .choice {
+      color: $font-main;
+      margin: 0 8px;
+    }
+  }
+
+  .copyrights {
+    font-size: .9rem;
+  }
+
+  .row {
+    margin-bottom: 20px;
+  }
+}
