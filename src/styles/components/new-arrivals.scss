@@ -1,0 +1,63 @@
+.new-arrivals {
+
+  .row {
+    flex-wrap: wrap;
+  }
+
+  .arrivals__title {
+    height: 256px;
+  }
+  
+  .flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    margin-bottom: 15px;
+    border: none;
+  }
+
+  .card-body {
+    padding: 1.5rem 0;
+
+    .add-to-cart {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .add {
+      width: 180px;
+    }
+    
+  }
+
+  .arrival__top {
+    display: flex;
+    justify-content: start;
+
+    .arrival__news {
+      font-weight: 600;
+      font-size: .8rem;
+      padding: 0 10px;
+    }
+  }
+
+  .card-text {
+    font-size: .9rem;
+    padding: 8px 0;
+  }
+
+  .arrival__button {
+    margin: 100px;
+  }
+
+  .btn {
+    border: 2.2px solid $main-color;
+    border-radius: 2px;
+    font-size: .8rem;
+    padding: 12px 30px;
+    font-weight: 500;
+  }
+}

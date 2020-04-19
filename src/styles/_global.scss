@@ -6,10 +6,19 @@ body {
 
   color: $font-main;
 }
-
-p {
+h1, h2, h3, h4, h5, p {
   margin: 0;
   padding: 0;
+}
+
+h6 {
+  display: inline-block;
+  font-size: .8rem;
+  font-weight: 700;
+}
+
+img {
+  cursor: pointer;
 }
 
 .page-content {
