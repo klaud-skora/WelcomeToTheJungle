@@ -29,6 +29,11 @@ img {
   padding: 0 297px;
 }
 
+.flex-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 @media (max-width: 1400px) {
   .wrapper {

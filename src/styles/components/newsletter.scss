@@ -1,0 +1,48 @@
+.newsletter {
+  height: 406px;
+
+  .newsletter__title {
+    position: relative;
+    height: 171px;
+
+    &::after {
+      content: 'Join our list and get 15% off your first purchase!';
+      position: absolute;
+      bottom: 10px;
+      color: $font-add;
+      font-size: .9rem;
+    }
+  }
+
+  .subscribe-area {
+    width: 60%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+    position: relative;
+
+    &::after {
+      content: '*Don\'t worry we don\'t spam';
+      position: absolute;
+      bottom: -50px;
+      font-size: .8rem;
+    }
+
+    .btn {
+      color: black;
+      font-size: .8rem;
+      font-weight: 500;
+
+    }
+  }
+
+  input[type=text] {
+    width: 100%;
+    border: none;
+    &::placeholder {
+      color: $font-holder;
+      font-size: .8rem;
+    }
+  }
+}
