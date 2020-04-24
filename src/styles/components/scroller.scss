@@ -1,0 +1,16 @@
+.scroller {
+  bottom: 60px;
+  left: 95%;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: lighten($font-holder, 22%);
+
+  .scroller__icon {
+    height: 40%; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

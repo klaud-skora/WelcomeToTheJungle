@@ -19,6 +19,8 @@ img {
 
 .page-content {
   max-width: 100%;
+  position: relative;
+  z-index: 10;
 }
 
 .wrapper {
