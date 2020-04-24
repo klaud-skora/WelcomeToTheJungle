@@ -1,10 +1,10 @@
 const script = {
 
-  getDate: function() { 
-    const date = new Date();
-    document.querySelector('.date').innerHTML = date.getFullYear(); 
+  scrollToTop: () => {
+    const scroller = document.querySelector('.scroller');
+    scroller.addEventListener('click', () => {(window).scrollTo({ top: 0, behavior: 'smooth' }) });
   },
-    
+
   loadProducts: () => {
     const button = document.getElementById('all-products');
     const hiddenProducts = document.querySelectorAll('.product.hidden');
@@ -17,7 +17,15 @@ const script = {
     });
   },
 
+  getDate: function() { 
+    const date = new Date();
+    document.querySelector('.date').innerHTML = date.getFullYear(); 
+  },
+    
+  
+
   init: function() {
+    this.scrollToTop();
     this.loadProducts();
     this.getDate();
   },
