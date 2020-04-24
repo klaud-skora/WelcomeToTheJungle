@@ -11,6 +11,10 @@
   .card {
     margin-bottom: 15px;
     border: none;
+
+    &.hidden {
+      display: none;
+    }
   }
 
   .card-body {
@@ -52,5 +56,9 @@
     font-size: .8rem;
     padding: 12px 30px;
     font-weight: 500;
+
+    &.clicked {
+      display: none;
+    }
   }
 }

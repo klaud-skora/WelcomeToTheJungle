@@ -3,5 +3,5 @@ import 'bootstrap';
 import script from './script';
 
 document.addEventListener(`DOMContentLoaded`, function () {
-  script().getData();
+  script.init();
 });
