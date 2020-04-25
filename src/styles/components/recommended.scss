@@ -2,15 +2,23 @@
   min-height: 438px;
   background-color: $main-color;
   display: flex;
+  justify-content: center;
   align-items: center;
   position: relative;
-
-  .carousel-control-prev, .carousel-control-next {
-    width: 10%;
+  
+  .carousel {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
   }
 
   .card {
+    flex: 23%;
+    max-width: 23%;
     position: relative;
+    display: inline-block;
+
 
     .card-body {
       color: #ffffff;
@@ -25,10 +33,30 @@
       font-size: 13px;
       font-weight: 500;
     }
+
+    .button {
+      position: absolute;
+
+      &.prev {
+        left: 30px;
+      }
+
+      &.next {
+        right: 30px;
+      }
+    }
   }
 
 
   @media (max-width: 850px) {
-    padding: 100px;
+
+    .carousel {
+      justify-content: center;
+    }
+
+    .card {
+      flex: 100%;
+      max-width: 100%;
+    }
   }
 }
