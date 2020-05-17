@@ -1,17 +1,17 @@
-const loadProducts = () => {
+const loadProducts = (images) => {
   const button = document.getElementById('all-products');
   const productsWrapper = document.querySelector('.arrivals__content .row');
 
   const moreProducts = [
     {
-      image: 'https://via.placeholder.com/309x390',
+      image: images[0],
       sign: './assets/icons/9ef4929d09df29ff3a001987ec297b1c.svg',
       info: 'LAST CHANCE',
       name: 'Backpack with contrasting buckle',
       price: '$33.50',
     },
     {
-      image: 'https://via.placeholder.com/309x390',
+      image: images[1],
       sign: './assets/icons/97285b5bfcc565e9effd7af574d8cd25.svg',
       info: 'READY FOR THIS ?',
       name: 'Backpack with contrasting buckle',
@@ -27,7 +27,7 @@ const loadProducts = () => {
       
       newProduct.innerHTML = 
         `<div class="card">
-            <img src=${product.image} class="card-img-top" alt="...">
+            <img src=${product.image} class="new-arrivals_image" alt="...">
             <div class="card-body">
               <div class="arrival__top">
                 <img class="arrival__icon" src=${product.sign}>
