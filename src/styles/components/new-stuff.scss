@@ -12,6 +12,10 @@
     position: absolute;
     top: 0;
 
+    .image {
+      object-fit: fill;
+    }
+
     .card-text {
       width: 100px;
       margin-bottom: 10px; 
