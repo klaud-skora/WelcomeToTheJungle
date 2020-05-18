@@ -1,5 +1,5 @@
 const NewStuffData = (images) => {
-  const imageBoxe = document.querySelector('.new-stuff');
+  const imageBoxe = document.querySelector('.new-stuff_content');
 
   imageBoxe.innerHTML = 
     `<div class="row">

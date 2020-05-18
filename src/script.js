@@ -6,6 +6,8 @@ import CarouselData from './scripts/carouselData';
 import NewArrivalsData from './scripts/newArrivalsData';
 import NewStuffData from './scripts/newStuffData';
 import fetchData from './scripts/fetchData';
+import hideLoader from './scripts/hideLoader';
+import fetchError from './scripts/fetchError';
 
 const runScripts = () =>  { 
   fetchData().then(res => {
@@ -13,8 +15,8 @@ const runScripts = () =>  {
     NewArrivalsData(res.slice(8,16));
     loadProducts(res.slice(16,18));
     NewStuffData(res.slice(25,29));
-  }).catch(err => { console.log(err);
-  }).finally(() => { console.log('finally');
+  }).catch(err => { fetchError();
+  }).finally(() => { hideLoader();
   });
   
   scrollToTop();
